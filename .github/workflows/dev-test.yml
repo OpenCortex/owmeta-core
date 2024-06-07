@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    uses: openworm/owmeta-core/.github/workflows/test.yml@github-workflows-py311
+    uses: openworm/owmeta-core/.github/workflows/test.yml@github-workflows
     with:
       coveralls: ${{github.event_name != 'schedule'}}
       ref: ${{ github.ref }}
